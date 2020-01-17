@@ -11,6 +11,7 @@ $(document).ready(function()  {
     var name = $("input#name").val();
     var age = parseInt($("input#age").val());
 
+    answer_sum = answer_1 + answer_2 + answer_3 + answer_4 + answer_5;
     age += 5;
 
     $(".name").text(name);
@@ -20,8 +21,14 @@ $(document).ready(function()  {
 
     if (answer_1 === 0 || answer_2 === 0 || answer_3 === 0 || answer_4 === 0 || answer_5 === 0) {
       alert("Please answer all the questions");
+    } else if (answer_sum <= 5) { 
+      $("#swift").show();
+    } else if (answer_sum > 5 && answer_sum <= 9) {
+      $("#c_plus_plus").show();
+    } else if (answer_sum > 9 && answer_sum <= 13) {
+      $("#python").show();
     } else {
-
+      $("#ruby").show();
     }
 
 
@@ -30,61 +37,5 @@ $(document).ready(function()  {
     // $("#python").show();
     // $("#ruby").show();
 
-
-
-
-    if (answer_1 === 1 ) {
-      $("#swift").show();
-    } else if ( answer_1 === 1 ) {
-      $("#c_plus_plus").show();
-    } else if (answer_1 === 1 ) {
-      $("#python").show();
-      $("#ruby").show();
-    } else {
-
-    }
-
-    // if (answer_2 === "1") {
-    //   alert("You should learn Swift or Python!")
-    // } else if (answer_2 === "2") {
-    //   alert("You should learn C++ or Python!")
-    // } else {
-    //   alert("Please answer question 2:")
-    // }
-
-    // if (answer_3 === "1") {
-    //   alert("You should learn Swift!");
-    // } else if ( answer_3 === "2") {
-    //   alert("You should learn C++!");
-    // } else if (answer_3 === "3") {
-    //   alert("You should learn Python!");
-    // } else {
-    //   alert("Please answer question 3");
-    // }
-
-    // if (answer_4 === "1") {
-    //   alert("You should learn Swift!");
-    // } else if (answer_4 === "2") {
-    //   alert("You should learn C++!");
-    // } else if (answer_4 === "3") {
-    //   alert("You should learn Python!");
-    // } else if (answer_4 === "4") {
-    //   alert("You should learn C++");
-    // } else {
-    //   alert("Please answer question 4");
-    // }
-
-    // if (answer_5 === "1") {
-    //   alert("You should learn Swift!");
-    // } else if (answer_5 === "2") {
-    //   alert("You should learn C++!");
-    // } else if (answer_5 === "3") {
-    //   alert("You should learn Python!");
-    // } else if (answer_5 === "4") {
-    //   alert("You should learn C++");
-    // } else {
-    //   alert("Please answer question 5");
-    // }
-    
   });
 });

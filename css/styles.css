@@ -16,3 +16,11 @@ body {
 .name {
   text-transform: capitalize;
 }
+
+img {
+  border-radius: 30px;
+}
+
+.result {
+  text-align: center;
+}
