@@ -6,7 +6,7 @@
 
 ## Description
 
-This is a simple quiz website designed as an exercise for implementing form elements. The website asks user to answer a few questions and returns a suggestion for the type of computer programing language they should learn. 
+This is a simple form website designed as an exercise for implementing form elements. The website asks user to answer a few questions and returns a suggestion for the type of computer programing language they should learn. This website demonstrates knowledged of jQuery and branching logic.
 
 ## Setup/Installation Requirements
 
