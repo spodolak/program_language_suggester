@@ -11,7 +11,7 @@ This is a simple form website designed as an exercise for implementing form elem
 ## Setup/Installation Requirements
 
 * Clone this repository to your desktop. If using git bash you can do this by typing "git clone https://github.com/spodolak/program_language_suggester.git" into your command line while in desktop directory.
-* Navigate inside project directory by entering "cd  program_language_suggester" command in git bash. 
+* Navigate inside project directory by entering "cd  program_language_suggester" in git bash. 
 * Open index.html file in your browser of choice by entering "open index.html".
 
 ## Link to GitHub Pages

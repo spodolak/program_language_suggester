@@ -26,15 +26,14 @@ $(document).ready(function()  {
       alert("Please enter your name");
     } else if (age === "NaN") {
       alert ("Please enter your age");
-    }
-    else if (answer_sum <= 5) { 
-      $("#swift").show();
+    } else if (answer_sum <= 5) { 
+      $("#swift").fadeIn();
     } else if (answer_sum > 5 && answer_sum <= 9) {
-      $("#c_plus_plus").show();
+      $("#c_plus_plus").fadeIn();
     } else if (answer_sum > 9 && answer_sum <= 13) {
-      $("#python").show();
+      $("#python").fadeIn();
     } else {
-      $("#ruby").show();
+      $("#ruby").fadeIn();
     }
 
 

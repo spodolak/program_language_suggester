@@ -1,12 +1,18 @@
 body {
+  background-image: url("https://danishmujeeb.com/wp-content/uploads/2014/01/sorting-in-python.png");
   background-color: rgb(34, 32, 32);
-  color: whitesmoke;
+  color:  rgb(34, 32, 32);
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 0.75);
 }
 
 .jumbotron {
   background-color: transparent;
   text-align: center;
-  color: rgb(255, 208, 0);
+  color: rgb(34, 32, 32);
+
 }
 
 #swift, #c_plus_plus, #python, #ruby {
@@ -15,6 +21,7 @@ body {
 
 .name {
   text-transform: capitalize;
+  color: rgb(1, 77, 165);
 }
 
 img {
