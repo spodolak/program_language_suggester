@@ -3,4 +3,7 @@ body {
   color: whitesmoke;
 }
 
+.swift, .c_plus_plus, .python, .ruby {
+  display: none;
+}
 

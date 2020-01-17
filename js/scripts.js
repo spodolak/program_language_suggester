@@ -3,6 +3,19 @@ $(document).ready(function()  {
     var answer_1 = $("select#application_type").val();
     var answer_2 = $("select#operating_system").val();
     var answer_3 = $("select#favorite_saga").val();
+    var answer_4 = $("select#hours_sleep").val();
+    var answer_5 =$("select#crayon").val();
+
+    if (answer_1 === "0" || answer_2 === "0" || answer_3 === "0" || answer_4 === "0" || answer_5 === "0") {
+      alert("Please answer all the questions");
+    } else if {
+      
+    }
+
+
+
+
+
 
     // if (answer_1 === "1") {
     //   alert("You should learn Swift!");
@@ -22,14 +35,39 @@ $(document).ready(function()  {
     //   alert("Please answer question 2:")
     // }
 
-    if (answer_3 === "1") {
-      alert("You should learn Swift!");
-    } else if ( answer_3 === "2") {
-      alert("You should learn C++!");
-    } else if (answer_3 === "3") {
-      alert("You should learn Python!");
-    } else {
-      alert("Please answer question 3");
-    }
+    // if (answer_3 === "1") {
+    //   alert("You should learn Swift!");
+    // } else if ( answer_3 === "2") {
+    //   alert("You should learn C++!");
+    // } else if (answer_3 === "3") {
+    //   alert("You should learn Python!");
+    // } else {
+    //   alert("Please answer question 3");
+    // }
+
+    // if (answer_4 === "1") {
+    //   alert("You should learn Swift!");
+    // } else if (answer_4 === "2") {
+    //   alert("You should learn C++!");
+    // } else if (answer_4 === "3") {
+    //   alert("You should learn Python!");
+    // } else if (answer_4 === "4") {
+    //   alert("You should learn C++");
+    // } else {
+    //   alert("Please answer question 4");
+    // }
+
+    // if (answer_5 === "1") {
+    //   alert("You should learn Swift!");
+    // } else if (answer_5 === "2") {
+    //   alert("You should learn C++!");
+    // } else if (answer_5 === "3") {
+    //   alert("You should learn Python!");
+    // } else if (answer_5 === "4") {
+    //   alert("You should learn C++");
+    // } else {
+    //   alert("Please answer question 5");
+    // }
+    
   });
 });
