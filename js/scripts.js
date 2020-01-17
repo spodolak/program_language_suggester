@@ -3,17 +3,25 @@ $(document).ready(function()  {
     
     $("#swift, #c_plus_plus, #python, #ruby").hide();
 
-    var answer_1 = parseInt($("select#application_type").val();
-    var answer_2 = parseInt($("select#operating_system").val();
-    var answer_3 = parseInt($("select#favorite_saga").val();
-    var answer_4 = parseInt($("select#hours_sleep").val();
-    var answer_5 = parseInt($("select#crayon").val();
+    var answer_1 = parseInt($("select#application_type").val());
+    var answer_2 = parseInt($("select#operating_system").val());
+    var answer_3 = parseInt($("select#favorite_saga").val());
+    var answer_4 = parseInt($("select#hours_sleep").val());
+    var answer_5 = parseInt($("select#crayon").val());
+    var name = $("input#name").val();
+    var age = parseInt($("input#age").val());
+
+    age += 5;
+
+    $(".name").text(name);
+    $(".age").text(age);
+
     event.preventDefault();
 
-    if (answer_1 === "0" || answer_2 === "0" || answer_3 === "0" || answer_4 === "0" || answer_5 === "0") {
+    if (answer_1 === 0 || answer_2 === 0 || answer_3 === 0 || answer_4 === 0 || answer_5 === 0) {
       alert("Please answer all the questions");
     } else {
-      
+
     }
 
 
@@ -25,11 +33,11 @@ $(document).ready(function()  {
 
 
 
-    if (answer_1 === "1") {
+    if (answer_1 === 1 ) {
       $("#swift").show();
-    } else if ( answer_1 === "2") {
+    } else if ( answer_1 === 1 ) {
       $("#c_plus_plus").show();
-    } else if (answer_1 === "3") {
+    } else if (answer_1 === 1 ) {
       $("#python").show();
       $("#ruby").show();
     } else {
