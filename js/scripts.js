@@ -13,6 +13,7 @@ $(document).ready(function()  {
 
     answer_sum = answer_1 + answer_2 + answer_3 + answer_4 + answer_5;
     age += 5;
+    console.log(age);
 
     $(".name").text(name);
     $(".age").text(age);
@@ -21,7 +22,12 @@ $(document).ready(function()  {
 
     if (answer_1 === 0 || answer_2 === 0 || answer_3 === 0 || answer_4 === 0 || answer_5 === 0) {
       alert("Please answer all the questions");
-    } else if (answer_sum <= 5) { 
+    } else if (name === "") { 
+      alert("Please enter your name");
+    } else if (age === "NaN") {
+      alert ("Please enter your age");
+    }
+    else if (answer_sum <= 5) { 
       $("#swift").show();
     } else if (answer_sum > 5 && answer_sum <= 9) {
       $("#c_plus_plus").show();
