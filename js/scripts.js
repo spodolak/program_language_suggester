@@ -8,12 +8,12 @@ $(document).ready(function()  {
     var answer_3 = parseInt($("select#favorite_saga").val());
     var answer_4 = parseInt($("select#hours_sleep").val());
     var answer_5 = parseInt($("select#crayon").val());
+    var answer_6 = parseInt($("input:radio[name=ice_cream]:checked").val());
     var name = $("input#name").val();
     var age = parseInt($("input#age").val());
 
     answer_sum = answer_1 + answer_2 + answer_3 + answer_4 + answer_5;
     age += 5;
-    console.log(age);
 
     $(".name").text(name);
     $(".age").text(age);
@@ -36,11 +36,12 @@ $(document).ready(function()  {
       $("#ruby").fadeIn();
     }
 
-
-    // $("#swift").show();
-    // $("#c_plus_plus").show();
-    // $("#python").show();
-    // $("#ruby").show();
-
+    if (answer_6 <= 3) {
+      $("#no_pistachio").show();
+    } else if (answer_6 > 3) {
+      $("#yes_pistachio").show();
+    } else {
+      $("#null_pistachio").show();
+    }
   });
 });
