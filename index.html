@@ -5,15 +5,16 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.4.1.js"></script>
     <script src="js/scripts.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
     <title>Program Language Suggester</title>
   </head>
   <body>
     <div class="container">
       <div class="jumbotron">
-        <h1>Programming Language Suggester</h1>
+        <h1 class="display-1">Programming Language Suggester</h1>
       </div>
       <form id="language_sorter">
-        <p>1. Why do you want to learn a progam?</p>
+        <h4>1. Why do you want to learn a progam?</h4>
         <select class="form-control" id="application_type">
           <option class="answer" value="0"></option>
           <option class="answer" value="1">Design mobile apps</option>
@@ -21,14 +22,14 @@
           <option class="answer" value="3">Learn a new skill</option>
         </select>
         <br>
-        <p>2. Do you prefer Android or Apple?</p>
+        <h4>2. Do you prefer Android or Apple?</h4>
         <select class="form-control" id="operating_system">
           <option class="answer" value="0"></option>
           <option class="answer" value="1">Android</option>
           <option class="answer" value="2">Apple</option>
         </select>
         <br>
-        <p>3. Do you prefer Star Wars, Harry Potter, or Game of Thrones?</p>
+        <h4>3. Do you prefer Star Wars, Harry Potter, or Game of Thrones?</h4>
         <select class="form-control" id="favorite_saga">
           <option class="answer" value="0"></option>
           <option class="answer" value="1">Star Wars</option>
@@ -36,7 +37,7 @@
           <option class="answer" value="3">Game of Thrones</option>
         </select>
         <br>
-        <p>4. How many hours of sleep do you need per night? </p>
+        <h4>4. How many hours of sleep do you need per night? </h4>
         <select class="form-control" id="hours_sleep">
           <option class="answer" value="0"></option>
           <option class="answer" value="1">10 hours...or as long as you'll let me</option>
@@ -45,7 +46,7 @@
           <option class="answer" value="4">Sleep is for the weak!</option>
         </select>
         <br>
-        <p>5. What is your favorite crayon color?</p>
+        <h4>5. What is your favorite Crayola crayon color?</h4>
         <select class="form-control" id="crayon">
           <option class="answer" value="0"></option>
           <option class="answer" value="1">Periwinkle</option>
@@ -54,6 +55,33 @@
           <option class="answer" value="4">Granny Smith Apple</option>
         </select>
         <br>
+        <h4>6. How much do you enjoy pistachio ice cream?</h4>
+        <div class="radio">
+          <label>
+            <input type="radio" name="ice_cream" value="1">
+            Gross!
+          </label>
+          <br>
+          <label>
+            <input type="radio" name="ice_cream" value="2">
+            I can stomach it
+          </label>
+          <br>
+          <label>
+            <input type="radio" name="ice_cream" value="3">
+            I'll eat it if that's my only option
+          </label>
+          <br>
+          <label>
+            <input type="radio" name="ice_cream" value="4">
+            It's pretty good
+          </label>
+          <br>
+          <label>
+            <input type="radio" name="ice_cream" value="5">
+            Best ice cream EVER!
+          </label>
+        </div>
         <div class="row">
           <div class="col-md-6">
             <div class="form-group">

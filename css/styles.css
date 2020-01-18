@@ -1,22 +1,22 @@
+#swift, #c_plus_plus, #python, #ruby {
+  display: none;
+}
+
 body {
   background-image: url("https://danishmujeeb.com/wp-content/uploads/2014/01/sorting-in-python.png");
   background-color: rgb(34, 32, 32);
   color:  rgb(34, 32, 32);
+  font-family: 'Roboto Slab', serif;
 }
 
 .container {
-  background-color: rgba(255, 255, 255, 0.75);
+  background-color: rgba(255, 255, 255, 0.89);
 }
 
 .jumbotron {
   background-color: transparent;
   text-align: center;
-  color: rgb(34, 32, 32);
-
-}
-
-#swift, #c_plus_plus, #python, #ruby {
-  display: none;
+  color: rgb(1, 77, 165);
 }
 
 .name {
@@ -30,4 +30,9 @@ img {
 
 .result {
   text-align: center;
+}
+
+.form-control {
+  background-color: whitesmoke;
+  color: black;
 }
